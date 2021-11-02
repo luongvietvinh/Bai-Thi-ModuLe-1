@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function findVowel(string) {
+    function vowelValue(string) {
         let string1 = ["a", "e", "i", "o", "u"];
         let count = 0;
         for (let i = 0; i < string.length; i++) {
@@ -22,8 +22,8 @@
     }
 
     let string = prompt("nhập vào một chuỗi :");
-    findVowel(string);
-    document.write('Số kí tự nguyên âm ' + ' ' + findVowel(string));
+    vowelValue(string);
+    document.write('Số kí tự nguyên âm ' + ' ' + vowelValue(string));
 </script>
 </body>
 </html>
