@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nguyên âm</title>
+</head>
+<body>
+<script>
+    function findVowel(string) {
+        let string1 = ["a", "e", "i", "o", "u"];
+        let count = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (string1.indexOf(string[i]) !== -1) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return false;
+        }
+    }
+
+    let string = prompt("nhập vào một chuỗi :");
+    findVowel(string);
+    document.write('Số kí tự nguyên âm ' + ' ' + findVowel(string));
+</script>
+</body>
+</html>

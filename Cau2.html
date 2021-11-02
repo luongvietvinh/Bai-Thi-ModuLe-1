@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng cho trước </title>
+
+</head>
+<body>
+<script>
+    let array = [5, 2, 8, 4, 9, 6, 17, 8, 19];
+    let newNumBer = +prompt("nhập vào số:")
+
+    function search(Num, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (Num === arr[i]) {
+                document.write(Num + ' ' + 'thuộc mảng cho trước,' + ' có vị trí index là :' + ' ' + i);
+                return i;
+            }
+
+        }
+        document.write(Num + ' ' + 'không thuộc mảng cho trước');
+    }
+
+
+    search(newNumBer, array);
+
+</script>
+</body>
+</html>
